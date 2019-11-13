@@ -11,6 +11,7 @@
 	text-align:center;
 	border-radius:200px;
 	padding:25px;
+	touch-action: manipulation;//Stop screen zooming when double tapping buttons
 }
 
 .button-box {
