@@ -98,19 +98,21 @@ const ship ={
 	},
 	
 	update: function(){
-		this.fireRate++;
-		
-		this.x += this.dx;		
-		this.y += this.dy;
-		
-		if (this.x < 0){
-			this.x=0;		
-		}
-		if (this.y<40){
-			this.y=40;
-		}
-		if (this.y>520){
-			this.y=520;
+		if(state.current == state.game) {
+			this.fireRate++;
+			
+			this.x += this.dx;		
+			this.y += this.dy;
+			
+			if (this.x < 0){
+				this.x=0;		
+			}
+			if (this.y<40){
+				this.y=40;
+			}
+			if (this.y>520){
+				this.y=520;
+			}
 		}
 		
 		if(state.current===state.over){
