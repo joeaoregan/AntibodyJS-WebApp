@@ -6,8 +6,7 @@
 
 .controller {
 	border: 2px solid black;
-	//width:1000px;
-	width:820px;
+	width:1000px;
 	margin: 0 auto;
 	text-align:center;
 	border-radius:200px;
@@ -29,7 +28,7 @@
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 24px;
+	font-size: 36px;
 	margin: 4px 2px;
 	border-radius:50px;
 }
