@@ -4,6 +4,14 @@
 	margin: 0 auto;
 }
 
+.controller-border {
+	border: 2px solid black;
+	width: 1110px;
+	margin: 0 auto;
+	padding: 85px;
+	touch-action: manipulation;/*Stop screen zooming when double tapping buttons*/
+}
+
 .controller {
 	background-color:#b2b4b2;
 	border: 2px solid black;
@@ -11,7 +19,6 @@
 	text-align:center;
 	border-radius:200px;
 	padding:25px;
-	touch-action: manipulation;/*Stop screen zooming when double tapping buttons*/
 	margin: 0 auto;
 }
 
