@@ -3,3 +3,55 @@
 	display: block;
 	margin: 0 auto;
 }
+
+.controller {
+	border: 2px solid black;
+	//width:1000px;
+	width:820px;
+	margin: 0 auto;
+	text-align:center;
+	border-radius:200px;
+	padding:25px;
+}
+
+.button-box {
+	display:inline-block;
+	//border: 2px solid black;
+	text-align:center;
+	width:320px;
+}
+
+.button-round {
+	background-color: #F14;
+	border: 3px solid black;
+	color: white;
+	padding: 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 24px;
+	margin: 4px 2px;
+	border-radius:50px;
+}
+
+.button-divider {
+	width:75px;
+	height:auto;
+	display:inline-block;
+}
+
+.buttonA {
+	background-color: #F14;
+}
+
+.buttonB {
+	background-color: #FF0;
+}
+
+.buttonX {
+	background-color: #00F;
+}
+
+.buttonY {
+	background-color: #0F0;
+}

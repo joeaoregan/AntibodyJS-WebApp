@@ -192,6 +192,28 @@ window.addEventListener('keydown',function(e){
 	}
 },false);
 
+function moveUp(){
+	ship.dy=-ship.speed;
+}
+function moveDown(){
+	ship.dy=ship.speed;
+}
+function moveLeft(){
+	ship.dx=-ship.speed;
+}
+function moveRight(){
+	ship.dx=ship.speed;
+}
+function moveXClear(){
+	ship.dx=0;
+}
+function moveYClear(){
+	ship.dy=0;	
+}
+function fire(){
+	ship.fire();
+}
+
 document.addEventListener('keyup', function(event) {
 	switch (event.keyCode) {
 		case 65: // A
