@@ -1,5 +1,6 @@
 body {
 	//font-size: 125%;
+	font-size: 2em;
 }
 
 h1 {
@@ -7,7 +8,7 @@ h1 {
 	/*width: 100%;
 	//text-align-last:center;*/
 	//margin: 0 auto;
-	margin: 20px auto;
+	//margin: 20px auto;
 }
 
 canvas {
@@ -19,11 +20,12 @@ canvas {
 .controller-border {
 	border: 2px solid black;
 	width: 1200px;
-	padding: 40px;
+	/*padding: 40px;*/
 	padding: 40px 40px 75px;
 	touch-action: manipulation;/*Stop screen zooming when double tapping buttons*/
 	text-align:center;
 	margin: 0 auto;
+	font-size: .5em;
 }
 
 .body-border {
@@ -59,7 +61,7 @@ canvas {
 .button {
 	border: 3px solid black;
 	border-radius:60px;
-	font-size: 50px;
+	font-size: 40px;
 	padding: 25px;
 }
 
@@ -115,14 +117,15 @@ canvas {
 	border: none;
 	text-align: left;
 	outline: none;
-	font-size: 15px;
+	font-size: 1.5em;
 	transition: 0.4s;
 	font-weight: bold;
 	text-align:center;
+	border: 1px solid black;
 }
 
 .active, .accordion:hover {
-	background-color: #ccc; 
+	background-color: #f13; 
 }
 
 .panel {
