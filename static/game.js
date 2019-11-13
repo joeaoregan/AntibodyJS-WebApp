@@ -124,7 +124,7 @@ canvas.addEventListener("click", function(evt){
 	//console.log('click');
     switch(state.current){
         case state.getReady:
-            state.current = state.game;
+			startGame();
             break;
         case state.game:
             ship.fire();
@@ -134,6 +134,10 @@ canvas.addEventListener("click", function(evt){
             break;
     }
 });
+
+function startGame(){
+	state.current = state.game;
+}
 
 function reset(){
 	powerupNewLife.reset();
@@ -165,28 +169,28 @@ window.addEventListener('keydown',function(e){
 		case 37: // Left
 		case 100: // 4
 			ship.dx=-ship.speed;
-        e.preventDefault();
+			e.preventDefault();
 			//console.log('Left');
 			break;
 		case 87: // W
 		case 38: // Up
 		case 104: // 8
 			ship.dy=-ship.speed;
-        e.preventDefault();
+			e.preventDefault();
 			//console.log('Up');
 			break;
 		case 68: // D
 		case 39: // Right
 		case 102: // 6
 			ship.dx=ship.speed;
-        e.preventDefault();
+			e.preventDefault();
 			//console.log('Right');
 			break;
 		case 83: // S
 		case 40: // Down
 		case 98: // 2
 			ship.dy=ship.speed;
-        e.preventDefault();
+			e.preventDefault();
 			//console.log('Down ' + ship.dy);
 			break;
 	}

@@ -5,13 +5,14 @@
 }
 
 .controller {
+	background-color:#b2b4b2;
 	border: 2px solid black;
 	width:1000px;
 	margin: 0 auto;
 	text-align:center;
 	border-radius:200px;
 	padding:25px;
-	touch-action: manipulation;//Stop screen zooming when double tapping buttons
+	touch-action: manipulation;/*Stop screen zooming when double tapping buttons*/
 }
 
 .button-box {
@@ -19,6 +20,14 @@
 	//border: 2px solid black;
 	text-align:center;
 	width:320px;
+}
+
+.button-start {
+	background-color: #999; /*Grey*/
+	border: 3px solid black;
+	font-size: 36px;
+	padding: 15px;
+	border-radius:50px;
 }
 
 .button-round {
@@ -32,6 +41,13 @@
 	font-size: 36px;
 	margin: 4px 2px;
 	border-radius:50px;
+	
+	/* Stop button text highlighting when buttons pressed repeatedly */
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select:none;
+	user-select:none;
+	-o-user-select:none;
 }
 
 .button-divider {
@@ -41,17 +57,17 @@
 }
 
 .buttonA {
-	background-color: #F14;
+	background-color: #F14; /*Red*/
 }
 
 .buttonB {
-	background-color: #FF0;
+	background-color: #FF0; /*Yellow*/
 }
 
 .buttonX {
-	background-color: #00F;
+	background-color: #00F; /*Blue*/
 }
 
 .buttonY {
-	background-color: #0F0;
+	background-color: #0F0; /*Green*/
 }
