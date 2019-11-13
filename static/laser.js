@@ -37,6 +37,7 @@ class laser {
 				//console.log('lasers'+lasers.length);
 				
 				var ex = new explosion(this.x+this.w,this.y-enemyShip.h/2,96,12,'Explosion'); // create explosion
+				navigator.vibrate([500]);//vibrate mobile device if explosion
 				explosions.push(ex);
 				explosionFX.play();
 				enemyShip.reset();
@@ -52,13 +53,13 @@ class laser {
 					
 					bloodcellsDestroyed++;
 					console.log('Blood Cells Destroyed: ',bloodcellsDestroyed);
+					navigator.vibrate([500, 150, 500]);//vibrate mobile device if bloodcell destroyed
 				}				
 			}
 			
 			if(lasers[i] === this && collision(lasers[i], ship) && lasers[i].img=="LaserBlue"){
 				ship.updateHealth();
 				lasers.splice(i,1);
-				navigator.vibrate([500, 250, 500, 250, 500]);
 			}
 		}
 		
