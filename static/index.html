@@ -27,6 +27,27 @@
 		<script src="text.js"></script>
 		<script src="hud.js"></script>
 		<script src="game.js"></script>
+				
+		<!-- buttons -->
+		<br/><br/>
+		<div class="controller">
+			<div class="button-box">
+			  <button class="button-round" onmousedown="moveUp()" onmouseup="moveYClear()">&nbsp;&#8593;&nbsp;</button><br>
+			  <button class="button-round" onmousedown="moveLeft()" onmouseup="moveXClear()">&#8592;</button>
+			  <span class="button-divider"></span>
+			  <button class="button-round" onmousedown="moveRight()" onmouseup="moveXClear()">&#8594;</button><br>
+			  <button class="button-round" onmousedown="moveDown()" onmouseup="moveYClear()">&nbsp;&#8595;&nbsp;</button>
+			</div>
+			<span class="button-divider"></span>
+			<span class="button-divider"></span>
+			<div class="button-box">
+			  <button class="button-round buttonX" onmousedown="moveup()" onmouseup="fire()">&nbsp;X&nbsp;</button><br>
+			  <button class="button-round buttonY" onmousedown="moveleft()" onmouseup="fire()">&nbsp;Y&nbsp;</button>
+			  <span class="button-divider"></span>
+			  <button class="button-round buttonA" onmousedown="moveright()" onmouseup="fire()">&nbsp;A&nbsp;</button><br>
+			  <button class="button-round buttonB" onmousedown="movedown()" onmouseup="fire()">&nbsp;B&nbsp;</button>
+			</div>
+		</div>
 		
 		<p>
 			<h2>Controls</h2>
