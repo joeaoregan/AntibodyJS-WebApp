@@ -1,5 +1,11 @@
+body {
+	//font-size: 125%;
+}
+
 h1 {
 	text-align: center;
+	width: 100%;
+	text-align-last:center;
 }
 
 canvas {
