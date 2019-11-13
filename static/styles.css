@@ -7,12 +7,12 @@
 .controller {
 	background-color:#b2b4b2;
 	border: 2px solid black;
-	width:1000px;
-	margin: 0 auto;
+	width:1100px;
 	text-align:center;
 	border-radius:200px;
 	padding:25px;
 	touch-action: manipulation;/*Stop screen zooming when double tapping buttons*/
+	margin: 0 auto;
 }
 
 .button-box {
@@ -22,25 +22,24 @@
 	width:320px;
 }
 
+.button {
+	border: 3px solid black;
+	border-radius:60px;
+	font-size: 50px;
+	padding: 25px;
+}
+
 .button-start {
 	background-color: #999; /*Grey*/
-	border: 3px solid black;
-	font-size: 36px;
-	padding: 15px;
-	border-radius:50px;
 }
 
 .button-round {
 	background-color: #F14;
-	border: 3px solid black;
 	color: white;
-	padding: 25px;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
-	font-size: 36px;
+	display: inline-block
 	margin: 4px 2px;
-	border-radius:50px;
 	
 	/* Stop button text highlighting when buttons pressed repeatedly */
 	-moz-user-select: none;
