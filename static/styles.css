@@ -133,4 +133,5 @@ canvas {
 	display: none;
 	background-color: white;
 	overflow: hidden;
+	font-size: 1em;
 }
