@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Antibody JavaScript</title>
 		<link href="https://fonts.googleapis.com/css?family=Teko:700" rel="stylesheet" />
 		<link href="styles.css" rel="stylesheet" />
@@ -53,36 +54,50 @@
 			</div>
 			<h1>The A, B, X, and Y Buttons Do The Same Thing</h1>
 		</div>
+		<br/><br/>
 		
-		<p>
-			<h2>Controls</h2>
-			<ul>
-				<li><b>A, 4, &larr;</b> = Left</li>
-				<li><b>S, 2, &darr;</b> = Down</li>
-				<li><b>D, 6, &rarr;</b> = Right</li>
-				<li><b>W, 8, &uarr;</b> = Up</li>
-				<li><b>SPACE, Right Click</b> = Fire</li>
-				<li><b>F5</b> = Reset Game</li>
-				<li><b>F11</b> = Full Screen</li>
-			</ul>
-		</p>
-		
-		<p>
-			<h2>Info</h2>
-			<ul>
-				<li>Score points by destroying enemy ships</li>
-				<li>Player does not lose health when flashing</li>
-				<li>If the Bloodcell Count goes below zero, the game is over</li>
-				<li>The timer doesn't do anything yet</li>
-			</ul>
-		</p>
-		
-		<h2>Current Top Score</h2>
-		
-		<p id="scoreID"></p>
-		
-		<p>
-			<a href="https://github.com/joeaoregan/AntibodyJS" target="_blank">AntiBody JS GitHub Page</a>
-		</p>
+		<div class="body-border">
+			<div>
+				<h2>Current Top Score</h2>
+				
+				<p id="scoreID"></p>
+			</div>
+			
+			<div>
+				<button class="accordion">Controls</button>
+				<div class="panel">
+					<p>
+						<h2>Controls</h2>
+						<ul>
+							<li><b>A, 4, &larr;</b> = Left</li>
+							<li><b>S, 2, &darr;</b> = Down</li>
+							<li><b>D, 6, &rarr;</b> = Right</li>
+							<li><b>W, 8, &uarr;</b> = Up</li>
+							<li><b>SPACE, Right Click</b> = Fire</li>
+							<li><b>F5</b> = Reset Game</li>
+							<li><b>F11</b> = Full Screen</li>
+						</ul>
+					</p>
+				</div>
+				
+				<button class="accordion">Info</button>
+				<div class="panel">
+					<p>
+						<h2>Info</h2>
+						<ul>
+							<li>Score points by destroying enemy ships</li>
+							<li>Player does not lose health when flashing</li>
+							<li>If the Bloodcell Count goes below zero, the game is over</li>
+							<li>The timer doesn't do anything yet</li>
+						</ul>
+					</p>
+					<p>
+						<a href="https://github.com/joeaoregan/AntibodyJS" target="_blank">AntiBody JS GitHub Page</a>
+					</p>
+				</div>
+				
+				<script src="accordion.js"></script>
+			</div>
+		</div>
 	</body>
 </html>
