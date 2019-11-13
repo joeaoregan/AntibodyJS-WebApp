@@ -134,7 +134,7 @@ const ship ={
 			if(this.health>1){
 				this.health--;
 				this.flashThisMany(2);
-				navigator.vibrate([500, 150, 500, 150, 500]);//vibrate mobile device if hit
+				navigator.vibrate([300, 100, 300, 100, 300]);//vibrate mobile device if hit
 			} else {
 				this.lives--;
 				console.log('Player Life Lost - Lives: ',this.lives);
