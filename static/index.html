@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Antibody JavaScript</title>
+		<link href="https://fonts.googleapis.com/css?family=Teko:700" rel="stylesheet" />
+		<link href="styles.css" rel="stylesheet" />
+			
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		<h1>Antibody JavaScript</h1>
+		
+		<canvas id="antibody" width="1280" height="720"></canvas>
+
+		<script src="canvas.js"></script>
+		<script src="bloodcell.js"></script>
+		<script src="powerup.js"></script>
+		<script src="ship.js"></script>
+		<script src="enemyship.js"></script>
+		<script src="explosion.js"></script>
+		<script src="laser.js"></script>
+		<script src="scrollingBG.js"></script>
+		<script src="text.js"></script>
+		<script src="hud.js"></script>
+		<script src="game.js"></script>
+		
+		<p>
+			<h2>Controls</h2>
+			<ul>
+				<li><b>A, 4, &larr;</b> = Left</li>
+				<li><b>S, 2, &darr;</b> = Down</li>
+				<li><b>D, 6, &rarr;</b> = Right</li>
+				<li><b>W, 8, &uarr;</b> = Up</li>
+				<li><b>SPACE, Right Click</b> = Fire</li>
+				<li><b>F5</b> = Reset Game</li>
+			</ul>
+		</p>
+		
+		<p>
+			<h2>Info</h2>
+			<ul>
+				<li>Score points by destroying enemy ships</li>
+				<li>Player does not lose health when flashing</li>
+				<li>If the Bloodcell Count goes below zero, the game is over</li>
+			</ul>
+		</p>
+		
+		<h2>Current Top Score</h2>
+		
+		<p id="scoreID"></p>
+		
+		<p>
+			<a href="https://github.com/joeaoregan/AntibodyJS" target="_blank">AntiBody JS GitHub Page</a>
+		</p>
+	</body>
+</html>
