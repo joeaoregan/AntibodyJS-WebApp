@@ -26,7 +26,9 @@ const time ={
 }
 
 setInterval(function(){
-	time.timer++;
+	if(state.current == state.game){
+		time.timer++;
+	}
 	//console.log('time: '+time.timer);
 },1000);
 

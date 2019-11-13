@@ -17,8 +17,8 @@ const scrollingBG = {
     },
     
     update: function(){
-        if(state.current == state.game){
+        //if(state.current == state.game){
             this.x = (this.x - this.dx)%(this.w);
-        }
+        //}
     }
 }
