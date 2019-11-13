@@ -53,7 +53,7 @@ class laser {
 					
 					bloodcellsDestroyed++;
 					console.log('Blood Cells Destroyed: ',bloodcellsDestroyed);
-					navigator.vibrate([500, 150, 500]);//vibrate mobile device if bloodcell destroyed
+					navigator.vibrate([400, 100, 400]);//vibrate mobile device if bloodcell destroyed
 				}				
 			}
 			

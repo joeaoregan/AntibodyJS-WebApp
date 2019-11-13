@@ -47,6 +47,7 @@ class powerup{
 			}
 			
 			if(collision(ship, this)){
+				navigator.vibrate([100, 50, 100, 50, 100, 50, 400]);//vibrate mobile device if power up collected
 				this.reset();
 				if(ship.lives<3){
 					ship.lives++;
