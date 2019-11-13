@@ -58,6 +58,7 @@ class laser {
 			if(lasers[i] === this && collision(lasers[i], ship) && lasers[i].img=="LaserBlue"){
 				ship.updateHealth();
 				lasers.splice(i,1);
+				navigator.vibrate([500, 250, 500, 250, 500]);
 			}
 		}
 		
