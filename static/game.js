@@ -25,6 +25,11 @@ function collision(o1, o2) {
 
 window.onload = function() {
 	updateScore();
+	if ("vibrate" in navigator){
+		console.log('can vibrate');
+	}else{		
+		console.log('can not vibrate');
+	}
 } 
 
 function updateScore(){	
