@@ -15,6 +15,11 @@ const state = {
     over : 2
 }
 
+if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	var controller = document.getElementById("controller");
+	controller.display="none";
+}
+
 // AABB Collisions
 function collision(o1, o2) {
 	return (o2.x < o1.x+o1.w &&
