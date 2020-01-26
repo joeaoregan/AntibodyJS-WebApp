@@ -7,6 +7,8 @@ var powerup1;
 const MAX_BLOODCELLS=50;
 var bloodcellsDestroyed=0;
 
+var mute=false;
+
 // GAME STATE
 const state = {
     current : 0,
@@ -15,7 +17,7 @@ const state = {
     over : 2
 }
 
-// AABB Collisions
+// AABB Collisions between 2 objects
 function collision(o1, o2) {
 	return (o2.x < o1.x+o1.w &&
            o2.x+o2.w > o1.x &&
@@ -197,6 +199,9 @@ window.addEventListener('keydown',function(e){
 			ship.dy=ship.speed;
 			e.preventDefault();
 			//console.log('Down ' + ship.dy);
+			break;
+		case 77: // m
+			mute=!mute; // Pause / Unpause Game FX
 			break;
 	}
 },false);
