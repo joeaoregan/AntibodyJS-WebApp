@@ -137,6 +137,10 @@ function updateScore() {
 var game = new Game();
 game.init();
 
+let msPrev = window.performance.now();
+const fps = 60; // Frames per second
+const msPerFrame = 1000 / fps; // Milliseconds per frame
+
 // Game loop
 function loop() {
 	requestAnimationFrame(loop);
