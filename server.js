@@ -2,14 +2,21 @@
 	Joe O'Regan
 	30/01/2019
 */
-const express = require('express'),
-	http = require('http');
-	socketio = require('socket.io');
+// const express = require('express'),
+http = require('http');
+// 	socketio = require('socket.io');
+const express = require('express')
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3001;
 var app = express();
 var server = http.createServer(app);
-var io = require('socket.io').listen(server);
+// var io = require('socket.io').listen(server);
+var io = require('socket.io')(server, {
+	cors: {
+		origin: '*',
+		methods: ['GET', 'POST']
+	}
+});
 
 app.use(express.static('static'));
 
@@ -79,4 +86,6 @@ io.on('connection', (socket) => {
 	});
 });
 
-server.listen(port);
+server.listen(port, () => {
+	console.log(`Server is running on http://localhost:${port}`);
+});

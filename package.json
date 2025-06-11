@@ -4,8 +4,8 @@
   "description": "antibody js",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
-    "socket.io": "^2.3.0"
+    "express": "^4.19.2",
+    "socket.io": "^4.6.2"
   },
   "devDependencies": {},
   "scripts": {
