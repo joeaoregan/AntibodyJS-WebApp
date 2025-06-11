@@ -1,2 +1,8 @@
+# Joe O'Regan
+# 21/05/2022
+
 *.[lL]og
-node_modules/
+*.bak
+
+# folders
+node_modules

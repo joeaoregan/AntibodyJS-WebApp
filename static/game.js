@@ -23,16 +23,17 @@ class Game {
 	}
 
 	init() {
-		var bg = new Background();
+		let bg = new Background();
 		player1 = new Player("Player1", canvas.width / 2, canvas.height / 2);
 		enemyShip = new Enemy("EnemyShip");
 		this.objects.push(bg);
 		this.objects.push(player1);
 		this.objects.push(enemyShip);
 
-		for (var i = 0; i < NUM_BLOODCELLS; i++) {
-			var bc = new Bloodcell("BloodCell");
+		for (let i = 0; i < NUM_BLOODCELLS; i++) {
+			let bc = new Bloodcell("BloodCell");
 			this.objects.push(bc);
+			console.log("Blood Cell Created: ", i + 1);
 		}
 
 		hud1 = new hud();
@@ -48,6 +49,7 @@ class Game {
 
 			if (bloodcellsDestroyed >= MAX_BLOODCELLS) {
 				state.current = state.over; // Game over
+				console.log("Game Over! You destroyed all the blood cells!");
 			}
 		}
 	}
@@ -67,8 +69,8 @@ class Game {
 	}
 
 	collisions() {
-		for (var i = 0; i < this.objects.length; i++) {
-			for (var j = 0; j < game.objects.length; j++) {
+		for (let i = 0; i < this.objects.length; i++) {
+			for (let j = 0; j < game.objects.length; j++) {
 				if (typeof game.objects[i] != "undefined") {
 					if (game.objects[i].type == "LaserGreen") {
 						if (game.objects[j].type == "EnemyShip" && collision(game.objects[i], game.objects[j])) {
@@ -77,7 +79,7 @@ class Game {
 							score.high = Math.max(score.value, score.high);
 							localStorage.setItem("highscore", score.high);
 
-							var ex = new Explosion("Explosion", game.objects[j].x, game.objects[j].y - game.objects[j].h / 2, 96, 12); // create explosion at Enemy Ship location
+							let ex = new Explosion("Explosion", game.objects[j].x, game.objects[j].y - game.objects[j].h / 2, 96, 12); // create explosion at Enemy Ship location
 							game.objects.push(ex);
 							// console.log("explosion created")
 							navigator.vibrate([500]);//vibrate mobile device if explosion
@@ -85,7 +87,7 @@ class Game {
 							game.objects[j].reset();
 							game.objects.splice(i, 1);
 						} else if (game.objects[j].type == "BloodCell" && collision(game.objects[i], game.objects[j])) {
-							var ex = new Explosion("ExplosionBlood", game.objects[j].x, game.objects[j].y - game.objects[j].h, 128, 16); // create explosion
+							let ex = new Explosion("ExplosionBlood", game.objects[j].x, game.objects[j].y - game.objects[j].h, 128, 16); // create explosion
 							game.objects.push(ex);
 							if (!game.mute) splashFX.play();
 

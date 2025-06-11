@@ -1,14 +1,14 @@
 body {
-	//font-size: 125%;
+	/*font-size: 125%;*/
 	font-size: 2em;
 }
 
 h1 {
 	text-align: center;
 	/*width: 100%;
-	//text-align-last:center;*/
-	//margin: 0 auto;
-	//margin: 20px auto;
+	text-align-last:center;
+	margin: 0 auto;
+	margin: 20px auto;*/
 }
 
 canvas {
@@ -74,7 +74,7 @@ canvas {
 	color: white;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block
+	display: inline-block;
 	margin: 4px 2px;
 	
 	/* Stop button text highlighting when buttons pressed repeatedly */
