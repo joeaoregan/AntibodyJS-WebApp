@@ -24,3 +24,8 @@ npm run start
 3. [Antibody: Year 3 Project Submission](https://github.com/joeaoregan/LIT-Yr3-Project-Antibody/tree/master/AntibodyV3-Year3ProjectSubmission "LIT Games Design & Development Year 3 Project Submission")
 4. [Antibody: Year 3 Project (Code::Blocks Version)](https://github.com/joeaoregan/LIT-Yr3-Project-Antibody/tree/master/AntibodyV4-CodeBlocks "LIT Games Design & Development Year 3 Project (Code::Blocks Version)")
 5. [Antibody: Python Version](https://github.com/joeaoregan/AntibodyPy "Antibody: Python Version")
+
+
+### References:
+
+[Standardise Game Framerate](https://chriscourses.com/blog/standardize-your-javascript-games-framerate-for-different-monitors)
