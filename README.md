@@ -6,6 +6,7 @@ Deployed to render.
 ### Play the game:
 
 - [Render](https://antibody-js.onrender.com/)
+- [GitHub Pages](https://joeaoregan.github.io/AntibodyJS-WebApp)
 
 ---
 
